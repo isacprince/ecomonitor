@@ -91,3 +91,35 @@ Performance Otimizada: Aplicação das melhores práticas de gerenciamento de me
 
 **Interface do Usuário:**
 Experiência Agradável: Design focado na usabilidade e estética, promovendo engajamento e satisfação do usuário.
+
+## DER
+```mermaid
+erDiagram
+    Usuario {
+        INTEGER id PK
+        TEXT nome
+        TEXT email UK
+        TEXT senha
+        INTEGER pontos
+        REAL meta_semanal
+        }
+
+    Aparelho {
+        INTEGER id PK
+        TEXT nome
+        REAL potencia
+        REAL uso_diario
+        INTEGER usuario_id FK
+    }
+
+    Relatorio {
+        INTEGER id PK
+        INTEGER usuario_id FK
+        DATE data
+        REAL consumo_total
+        REAL economia
+    }
+
+    Usuario ||--o{ Aparelho : possui
+    Usuario ||--o{ Relatorio : gera
+```
