@@ -97,18 +97,18 @@ Experiência Agradável: Design focado na usabilidade e estética, promovendo en
 erDiagram
     Usuario {
         INTEGER id PK
-        TEXT nome
-        TEXT email UK
-        TEXT senha
+        VARCHAR nome
+        VARCHAR email UK
+        VARCHAR senha
         INTEGER pontos
-        REAL meta_semanal
-        }
+        DECIMAL meta_semanal
+    }
 
     Aparelho {
         INTEGER id PK
-        TEXT nome
-        REAL potencia
-        REAL uso_diario
+        VARCHAR nome
+        DECIMAL potencia
+        DECIMAL uso_diario
         INTEGER usuario_id FK
     }
 
@@ -116,8 +116,8 @@ erDiagram
         INTEGER id PK
         INTEGER usuario_id FK
         DATE data
-        REAL consumo_total
-        REAL economia
+        DECIMAL consumo_total
+        DECIMAL economia
     }
 
     Usuario ||--o{ Aparelho : possui
