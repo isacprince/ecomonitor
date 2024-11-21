@@ -1,4 +1,8 @@
 # EcoMonitor
+**IAB SOLUTIONS**
+**Alexandre Aguiar Martins - RM 93278**
+**Bruno do Nascimento - RM 94830**
+**Isac de Vietro - RM 93513**
 
 **EcoMonitor** é um aplicativo móvel desenvolvido com **Flutter** que permite aos usuários monitorar e gerenciar seu consumo de energia doméstica. Além de registrar e listar aparelhos elétricos, o aplicativo gera relatórios semanais detalhados e permite aos usuários definir metas de consumo para promover a sustentabilidade e economia de energia.
 
