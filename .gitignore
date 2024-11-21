@@ -1,0 +1,15 @@
+# Flutter/Dart/Pub related
+**/build/
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+
+# Packages
+.packages
+.pub-cache
+.pub
+
+# Others
+.DS_Store
+.idea/
+.vscode/
+*.iml
